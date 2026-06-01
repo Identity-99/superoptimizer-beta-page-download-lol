@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Optimization App</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4b006e, #0d0d0d);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(145deg, #6a11cb, #2575fc);
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.3em;
+      font-weight: 600;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      color: #f0f0f0;
+    }
+
+    .download-btn {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #834d9b, #d04ed6);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(135deg, #d04ed6, #834d9b);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+    }
+
+    @media(max-width: 700px){
+      .container {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Optimization App</h1>
+    <p>Boost your productivity with our cutting-edge tool.</p>
+    <button class="download-btn" onclick="window.location.href='your-download-link-here'">
+      Download Now
+    </button>
+  </div>
+</body>
+</html>
